@@ -1,0 +1,27 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.hybris.platform</groupId>
+	<artifactId>yrecommender</artifactId>
+	<version>5.0.0.0-SNAPSHOT</version>
+
+	<packaging>jar</packaging>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.twitter</groupId>
+			<artifactId>finagle-thriftmux_2.11</artifactId>
+			<version>6.28.0</version>
+		</dependency>
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>twitter</id>
+			<name>twitter</name>
+			<url>http://maven.twttr.com</url>
+		</repository>
+	</repositories>
+
+</project>

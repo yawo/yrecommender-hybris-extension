@@ -1,0 +1,11 @@
+#Ant properties
+#Thu Aug 27 15:01:03 CEST 2015
+builddate=20150827 1501
+description=yrecommender
+group.id=de.hybris.platform
+module.name=platform-module
+name=yrecommender
+releasedate=20150827 1244
+vendor=hybris
+version=5.7.0.0-SNAPSHOT
+version.api=5.7.0
