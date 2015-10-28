@@ -15,11 +15,9 @@ class ThriftMuxClientService {
   /** example codes.
   client.getSimilarProducts("104176_violet")
   client.getRecommendations(0,2,null)
-
-  //In Hybris Groovy console :
+  // ----------- And in hybris groovy console ----------- :
   import com.twitter.finagle.ThriftMux
-  import com.twitter.util.Await
-  import com.twitter.util.Duration
+  import com.twitter.util.*
   import org.springframework.stereotype.Service
   import thrift.RecommenderEngine.FutureIface
   Await.result(spring.getBean("thriftMuxClientService").getClient().reLoadDataAndBuildModel(3,0.07),Duration.fromSeconds(60))
