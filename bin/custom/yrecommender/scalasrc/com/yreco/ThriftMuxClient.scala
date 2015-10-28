@@ -20,9 +20,10 @@ class ThriftMuxClientService {
   import com.twitter.util.*
   import org.springframework.stereotype.Service
   import thrift.RecommenderEngine.FutureIface
-  Await.result(spring.getBean("thriftMuxClientService").getClient().reLoadDataAndBuildModel(3,0.07),Duration.fromSeconds(60))
-  //Await.result(spring.getBean("thriftMuxClientService").getClient().getRecommendations(0,2,null),Duration.fromSeconds(60))
-  Await.result(spring.getBean("thriftMuxClientService").getClient().getSimilarProducts("104176_violet"),Duration.fromSeconds(60))
+  client = spring.getBean("thriftMuxClientService").getClient()
+  Await.result(client.reLoadDataAndBuildModel(3,0.07)
+  Await.result(client.getRecommendations(0,2,null))
+  Await.result(client.getSimilarProducts("104176_violet"),Duration.fromSeconds(60))
 
   */
 
