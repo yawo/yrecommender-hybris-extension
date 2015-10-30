@@ -3,7 +3,7 @@ package com.yreco
 import com.twitter.finagle.ThriftMux
 import org.springframework.stereotype.Service
 import thrift.RecommenderEngine.FutureIface
-import scala.reflect._
+import scala.beans.BeanProperty
 
 /**
  * This is an example how to do Spring Dependency Injection in Scala service using annotations.
